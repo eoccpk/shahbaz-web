@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>forms</title>
+    <style>
+        #password{
+            color:black;
+            background-color: brown;
+        }
+        #user{
+            color:black ;
+            background-color: brown;
+        }
+        #fields{
+            background-color:lightcoral;
+            height: 30%;
+            width: 50%;
+            border: solid,black;
+
+        }
+        #btn{
+            height: 20px;
+            width: 50px;
+            border-radius: 2px;
+        }
+        .cls{
+            background-color: green;
+            color:black;
+            font-weight: bold;
+        }
+        .bdy{
+            height: 100%;
+            width: 100%;
+        }
+        .td{
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="bdy">
+    
+    <center>
+        <div id="fields">
+            <h2>submission form</h2>
+    <form method="get" action="save.php">
+        <label for="text" id="user" >username</label>
+        <input type="text" class="cls" name="username">
+        <br>
+        <label for="password" id="password" >password</label>
+        <input type="password" class="cls" name="password">
+        <br>
+        <input type="submit" value="send">
+        <br>
+        
+        <table class="td">
+            <tr>
+            <td><input type="checkbox" id="box2"></td>
+            <td><label for="box2">managr</label></td>
+            <tr>
+            <input type="checkbox"  id="box1">
+        <label for="box1">admin1</label>
+            </tr>
+        </tr>
+        </table>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <label for="slc">select from the list below</label>
+    <select name="" id="slc">
+        <option value="">first option</option>
+        <option value="">second option</option>
+        <option value="">third option</option>
+    </select>
+    <input type="url" name="" id="">
+    <input type="datetime-local" name="" id="">
+    <input type="search" name="" id="">
+    <input type="email" name="" id="">
+    <input type="reset" value="clear">
+       
+    </form>
+</div>
+</center>
+
+</body>
+</html>
